@@ -47,9 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-h1, h2, nav, p, footer, div, section {
-    /* border: solid black 2px; */
-}
 
 h1{
     font-size: 50px;
@@ -73,12 +70,16 @@ a {
     font-size: 20px;
 }
 
+
+
 header section {
     background-color: orangered;
-    height: 160px;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
 
 
@@ -115,21 +116,22 @@ section a {
 
 .section-middle {
     display: flex;
-
+    flex-direction: row;
 }
 
 .div-flex {
-    margin: 50px;;
+    /* margin: 5%; */
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
 }
 
 footer {
     background-color: aqua;
-    height: 200px;    
+    height: auto;
+    width: auto;    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -143,17 +145,67 @@ footer a {
 }
 
 #main-photo {
-    height: 800px;
-    width: 800px;
+    margin: 2%;
+    height: auto;
+    width: 50vw; 
 }
 
 .wrapper {
-    margin: 20px;
+    margin: 2%;
     justify-items: center;
     align-items: center;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-        grid-gap: 25px;
+    grid-gap: 25px;
   }
+/* iphone */
+  @media screen and ( max-width: 360px ) {
+    
+    header section {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+     .section-middle {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        color: red;
+        width: auto;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        grid-template-columns: auto;
+        
+    } 
+
+    p{
+        font-size: 80%;
+        text-align: center;
+    }
+
+    body {
+        width: auto;
+    }
+}
+
+    
 
 
+/* laptop */
+  @media ( max-width: 1366×768 ) {
+
+}
+/* widescreen */
+@media ( max-width: 1920×1080 ) {
+
+}
+
+/* @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  } */
