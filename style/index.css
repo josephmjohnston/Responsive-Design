@@ -131,7 +131,8 @@ section a {
 footer {
     background-color: aqua;
     height: auto;
-    width: auto;    
+    width: auto;  
+    padding-bottom: 5%;  
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -174,7 +175,9 @@ footer a {
         justify-content: center;
         color: red;
         width: auto;
+        align-content: center;
     }
+
 
     .wrapper {
         flex-direction: column;
@@ -184,7 +187,8 @@ footer a {
 
     p{
         font-size: 80%;
-        text-align: center;
+        text-align: left;
+        padding: 5%;
     }
 
     body {
@@ -196,14 +200,58 @@ footer a {
 
 
 /* laptop */
-  @media ( max-width: 1366×768 ) {
+  @media screen and ( max-width: 1366px ) {
+    
+    .section-middle {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-evenly;
+        color: red;
+        width: auto;
+        align-content: center;
+    }
 
+    .section-middle {
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        color: red;
+        width: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    
 }
+
 /* widescreen */
-@media ( max-width: 1920×1080 ) {
+@media screen and ( max-width: 1920px ) {
+    
+    .section-middle {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-evenly;
+        color: red;
+        width: auto;
+        align-content: center;
+    }
 
+    .section-middle {
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        color: red;
+        width: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    
 }
-
 /* @media screen and (max-width: 992px) {
     body {
       background-color: blue;
